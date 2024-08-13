@@ -17,13 +17,17 @@ class InicioPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: const Color(0xFFFFC107), width: 2),
+                  border: Border.all(color: const Color(0xFFffc2d1), width: 2),
                 ),
-                child: const Icon(Icons.calculate, size: 100, color: Colors.grey),
+                // NO ME JALA LA IMAGEN PROFE
+               /* child: Image.network(
+                  'https://i.pinimg.com/564x/11/e6/94/11e6944cfa46a33d2e5dee895b3f7f43.jpg',
+                  fit: BoxFit.contain,
+                ),*/
               ),
               const SizedBox(height: 30),
               const Text(
-                'Calculadora',
+                'Calculadora de prestamos',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 28,
@@ -33,7 +37,7 @@ class InicioPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Text(
-                'Realiza cálculos rápidos y sencillos',
+                'Obtenga un prestamo bancario con solo unos cuantos clicks ',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
@@ -55,7 +59,7 @@ class InicioPage extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
-                    Icon(Icons.play_arrow, color: Color(0xFFFFC107)),
+                    Icon(Icons.play_arrow, color: Color(0xFFffc2d1)),
                     SizedBox(width: 10),
                     Text(
                       'Siguiente',
