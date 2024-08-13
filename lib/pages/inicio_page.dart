@@ -4,33 +4,32 @@ class InicioPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Inicio'),
-      ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assets/calculator.png',
-            width: 200,
-            height: 200,
-          ),
-          SizedBox(height: 16.0),
-          Text(
-            'Calculadora',
-            style: TextStyle(
-              fontSize: 24.0,
-              fontWeight: FontWeight.bold,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              '',
+              width: 300,
+              height: 200,
             ),
-          ),
-          SizedBox(height: 16.0),
-          ElevatedButton(
-            onPressed: () {
-              // Agregar lógica del botón "Siguiente"
-            },
-            child: Text('Siguiente'),
-          ),
-        ],
+            SizedBox(height: 16.0),
+            Text(
+              'Calculadora',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 16.0),
+            ElevatedButton(
+              onPressed: () {
+                // Agregar lógica del botón "Siguiente"
+              },
+              child: Text('Siguiente'),
+            ),
+          ],
+        ),
       ),
     );
   }
