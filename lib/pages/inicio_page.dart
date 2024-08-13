@@ -1,43 +1,59 @@
-
 import 'package:flutter/material.dart';
 
-
-class AvatarPage extends StatelessWidget {
-  const AvatarPage({super.key});
-
+class InicioPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Avatar Page",
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.deepPurple,
-        elevation: 1.0,
-        actions: [
-          const CircleAvatar(
-            backgroundImage: AssetImage("assets/img/persona1.jpg"),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.more_vert),
-          ),
-        ],
+        title: Text('Inicio'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          FadeInImage(
-            placeholder: AssetImage("assets/img/loading.gif"),
-            image: AssetImage("assets/img/persona1.jpg"),
-            fadeInDuration: Duration(milliseconds: 1000),
-            fit: BoxFit.contain,
+          Image.asset(
+            'assets/calculator.png',
+            width: 200,
+            height: 200,
+          ),
+          SizedBox(height: 16.0),
+          Text(
+            'Calculadora',
+            style: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 16.0),
+          ElevatedButton(
+            onPressed: () {
+              // Agregar lógica del botón "Siguiente"
+            },
+            child: Text('Siguiente'),
           ),
         ],
       ),
+    );
+  }
+}
+
+class ItemComponentWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(16.0),
+      padding: EdgeInsets.all(16.0),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8.0),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black12,
+            offset: Offset(0, 2),
+            blurRadius: 4,
+          ),
+        ],
+      ),
+      child: Text('Item Component'),
     );
   }
 }
