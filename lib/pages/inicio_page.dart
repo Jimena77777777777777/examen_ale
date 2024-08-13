@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'second_page.dart'; // Agrega esta línea
 
 class InicioPage extends StatelessWidget {
   @override
@@ -20,7 +21,7 @@ class InicioPage extends StatelessWidget {
                   border: Border.all(color: const Color(0xFFffc2d1), width: 2),
                 ),
                 // NO ME JALA LA IMAGEN PROFE
-               /* child: Image.network(
+                /* child: Image.network(
                   'https://i.pinimg.com/564x/11/e6/94/11e6944cfa46a33d2e5dee895b3f7f43.jpg',
                   fit: BoxFit.contain,
                 ),*/
@@ -47,7 +48,11 @@ class InicioPage extends StatelessWidget {
               const SizedBox(height: 50),
               ElevatedButton(
                 onPressed: () {
-                  // Acción al presionar el botón
+                  // Navegación a la página second_page.dart
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SecondPage()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
