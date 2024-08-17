@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'second_page.dart'; 
 
 
-
 class InicioPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
