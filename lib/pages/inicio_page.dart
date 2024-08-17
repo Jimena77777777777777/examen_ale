@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'second_page.dart'; // Agrega esta línea
+import 'second_page.dart'; 
+
+
 
 class InicioPage extends StatelessWidget {
   @override
