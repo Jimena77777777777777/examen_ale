@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'inicio_page.dart'; // Asegúrate de importar tu página de inicio
 
 class ThankYouPage {
   static void showApprovalDialog(BuildContext context) {
@@ -38,7 +39,11 @@ class ThankYouPage {
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.of(context).pop(); // Cierra el diálogo
+                  Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (context) => InicioPage()),
+                    (Route<dynamic> route) => false, // Elimina todas las rutas anteriores
+                  );
                 },
                 icon: const Icon(Icons.home),
                 label: const Text('Volver'),
