@@ -19,7 +19,7 @@ class InicioPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: const Color(0xFFffc2d1), width: 2),
+                  border: Border.all(color: const Color(0xFFFFC107), width: 2),
                 ),
                 // NO ME JALA LA IMAGEN PROFE
                 /* child: Image.network(
@@ -65,7 +65,7 @@ class InicioPage extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
-                    Icon(Icons.play_arrow, color: Color(0xFFffc2d1)),
+                    Icon(Icons.play_arrow, color: Color(0xFFFFC107)),
                     SizedBox(width: 10),
                     Text(
                       'Siguiente',
